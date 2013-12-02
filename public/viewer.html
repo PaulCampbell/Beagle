@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Beagle: sniffing the enemy</title>
+    <script src='/scripts/flailr.js'></script>
+
+  </head>
+  <body>
+    <div id='container'>
+
+    </div>
+  </body>
+  <script>
+    var flailr = new Flailr();
+    flailr.containerId = 'container';
+    flailr.showVideo = true;
+    flailr.showDifferenceCanvas = true;
+    flailr.width = 640;
+    flailr.height = 480;
+    flailr.sensitivity = 100;
+    tileSize = 80;
+    flailr.hitTargets = [];
+    var idCounter = 0;
+    for (var x=0; x<flailr.width; x=x+tileSize){
+      for(var y=0; y < flailr.height; y=y+tileSize) {
+        flailr.hitTargets.push({id: idCounter, x:x, y:y, width:tileSize, height:tileSize, showOutline:true});
+        idCounter++;
+      }
+      idCounter++;
+    }
+    flailr.addEventListener('targetHit', function(e) {
+      console.log('target-hit: ' + JSON.stringify(e))
+      var hitTarget = document.getElementById(e.hitTarget.id)
+      hitTarget.style.backgroundColor = 'red';
+      setTimeout(function(){
+        hitTarget.style.backgroundColor = 'transparent';
+      }, 300)
+    })
+
+    flailr.start();
+
+  </script>
+</html>

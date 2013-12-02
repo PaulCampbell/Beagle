@@ -1,0 +1,18 @@
+{
+  "name": "beagle",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "3.x",
+    "stylus": "*"
+  },
+  "scripts": {
+    "start": "app.js"
+  },
+  "engines": {
+    "node": "0.10.22"
+  },
+  "subdomain": "beagle",
+  "devDependencies": {
+    "karma-chrome-launcher": "~0.1.0"
+  }
+}

@@ -1,0 +1,12 @@
+2014-02-12T19:54:54.791388000 1.144299s info: Creating directory /Users/paulcampbell/_src/beagle/rethinkdb_data
+2014-02-12T19:54:54.793221000 1.146132s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/paulcampbell/_src/beagle/rethinkdb_data' did not already exist.)
+2014-02-12T19:54:54.793319000 1.146229s info: Running rethinkdb 1.11.3 (CLANG 5.0 (clang-500.2.79))...
+2014-02-12T19:54:54.798374000 1.151285s info: Running on Darwin 13.0.0 x86_64
+2014-02-12T19:54:54.798414000 1.151325s info: Loading data from directory /Users/paulcampbell/_src/beagle/rethinkdb_data
+2014-02-12T19:54:54.902250000 1.255161s info: Listening for intracluster connections on port 29015
+2014-02-12T19:54:54.904869000 1.257780s info: Listening for client driver connections on port 28015
+2014-02-12T19:54:54.904895000 1.257805s info: Listening for administrative HTTP connections on port 8080
+2014-02-12T19:54:54.904898000 1.257808s info: Listening on addresses: 127.0.0.1, ::1
+2014-02-12T19:54:54.904899000 1.257809s info: To fully expose RethinkDB on the network, bind to all addresses
+2014-02-12T19:54:54.904899000 1.257810s info: by running rethinkdb with the `--bind all` command line option.
+2014-02-12T19:54:54.904900000 1.257811s info: Server ready

@@ -1,0 +1,21 @@
+doctype 5
+html
+  head
+    link(rel="icon", href="/favicon.png")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title= title
+    link(rel="stylesheet", type="text/css", href="http://fonts.googleapis.com/css?family=Lobster")
+  body
+    header(class='home')
+      - if (locals.username)
+        div logged in as #{locals.username}
+          a(href="/logout") Logout
+      h1
+        a(href="/", class="fancy") Beagle
+
+    div
+      a(href="/auth/facebook") Login with Facebook
+
+    footer(class='home-footer')
+      div(class='max-home-width') &copy; Beagle
+

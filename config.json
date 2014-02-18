@@ -1,0 +1,11 @@
+{
+  "mongoConnectionString": "mongodb://localhost/beagle_dev",
+  "port": "8776",
+  "domain": "http://beagle.com:8776",
+  "authentication": {
+    "facebook": {
+      "FACEBOOK_APP_ID": "192410807634677",
+      "FACEBOOK_APP_SECRET": "f60537ae9b83589bb5628b0bb35426f3"
+    }
+  }
+}

@@ -1,5 +1,6 @@
 var express = require('express');
 var home = require('./actions/home.js');
+var deviceSessions = require('./actions/deviceSessions.js');
 var config = require('./config.json');
 var db = require('./lib/db.js');
 
@@ -23,6 +24,8 @@ facebookAuthStrategy.init();
 
 app.get('/', home.index);
 app.get('/logout', home.logout);
+app.get('/connect-device', home.connectDevice);
+app.get('/session/:connectionId', deviceSessions.connect);
 
 app.get('/auth/facebook', passport.authenticate('facebook', { scope: ['email'] }));
 app.get('/auth/facebook/callback', passport.authenticate('facebook', { successRedirect: '/', failureRedirect: '/' }));

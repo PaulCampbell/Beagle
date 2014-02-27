@@ -17,7 +17,8 @@
     "zombie": "2.0.0-alpha28",
     "assert": "0.4.9",
     "request": "2.27.0",
-    "coffee-script": "1.6.3"
+    "coffee-script": "1.6.3",
+    "shortid": "2.0.0"
   },
   "engines": {
     "node": "0.10.22"

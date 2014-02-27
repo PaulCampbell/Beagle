@@ -14,7 +14,12 @@ html
         a(href="/", class="fancy") Beagle
 
     div
-      a(href="/auth/facebook") Login with Facebook
+    - if (!locals.username)
+      div
+        a(href="/auth/facebook") Login with Facebook
+    - else
+      div
+        a(href="/connect-device") Connect device
 
     footer(class='home-footer')
       div(class='max-home-width') &copy; Beagle
